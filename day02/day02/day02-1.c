@@ -7,14 +7,14 @@ int main() {
 	printf("기능: ");
 
 	int oper;
-	scanf_s("%d", &oper);
+	scanf_s("%d",&oper);
 
 	double num1, num2;
 	printf("숫자 1: ");
-	scanf_s(" % lf", &num1);
+	scanf_s("%lf",&num1);
 
 	printf("숫자 2: ");
-	scanf_s("% lf", &num2);
+	scanf_s("%lf",&num2);
 
 	double result;
 	if (oper == 1) {
@@ -30,7 +30,7 @@ int main() {
 	{
 		result = num1 / num2;
 	}
-	printf("result= %lf", result);
+	printf("결과= %lf\n",result);
 
 	return 0;
 }
