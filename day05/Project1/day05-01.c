@@ -49,7 +49,7 @@ int main() {
 	printf("***********************\n");
 	printf("譆渤高: %d\n", max);
 	printf("譆模高: %d\n", min);
-	printf("ゎ敕高: %f\n", aver);
+	printf("ゎ敕高: %.2f\n", aver);
 
 	free(name);
 	free(snum);
