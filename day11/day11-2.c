@@ -15,10 +15,10 @@ void integral(int a, int b, int n) {
 		// 직사각형 넓이 합산
 		for (int j = 0; j < interval; j++) {
 			float x = a + j * h;
-			f = log10(1 / x) + sin(x); // f(x) 계산
+			f = -log10(1 / x) + sin(x); // f(x) 계산
 			sum += f * h; // 넓이 누적
 		}
-		printf("구간:	%d		, 적분 결과: %.6f\n", interval, sum);
+		printf("구간:	%d		, 적분 결과: %.6f\n", interval, fabs(sum));
 	}
 }
 
